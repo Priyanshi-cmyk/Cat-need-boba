@@ -3,28 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CatLover</title>
+    <title>Catfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <h1>Catfolio</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    
-    <section>
+
+    <section class="about">
         <h2>About Me</h2>
-        <img src="profile.jpg" alt="Profile Image">
-        <p>Hello! I'm a cat developer passionate about creating stunning websites.</p>
+        <img src="data:image/jpeg;base64,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" alt="Profile Image">
+        <p>Hello! I'm a cat, passionate about creating stunning websites.</p>
     </section>
 
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRh64wVFaVi4brwrRqm1Z05NAbkdMe8YFTp7KBsifAzC5_IqZ6j6DRU3OrG-I_WO1NIpmkvBuubrNtcY61i7RlORgWuvmCBG890nbz0H7vDsUKkitrmeQ8X" alt="Project 1">
+            <p>CatMigo!</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
     <footer>
-        <p>Follow me on <a href="#">Catgram</a></p>
-        <p>This has 5 unique features, look closely!</p>
+        <p>Follow me on  
+            <a href="#">CattedIN</a>  
+            <a href="#">Cat</a>
+        </p>
     </footer>
+
 </body>
 </html>
